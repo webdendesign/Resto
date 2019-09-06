@@ -1,0 +1,26 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1100px;
+  min-height: 50px;
+  padding: 25px 0;
+}
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__list {
+  width: 490px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include list;
+}
+
+.page-header__item {
+  font-size: 14px;
+  line-height: 60px;
+}

@@ -1,0 +1,27 @@
+.passage {
+  padding: 100px 0 200px 0;
+}
+
+.passage__title {
+  margin: 0 0 70px;
+  font-size: 20px;
+  line-height: 26px;
+  color: $cl-gray;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.passage__image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.passage__gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.passage__image img {
+  display: block;
+}
