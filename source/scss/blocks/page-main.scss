@@ -6,7 +6,6 @@
   min-height: 570px;
   margin: 0 auto;
   text-align: center;
-
   background-image: url("../img/Layer 1.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -18,17 +17,13 @@
 }
 
 .page-main__title {
-  margin: 0;
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 100px;
-  line-height: 60px;
-  color: $cl-white;
+  margin: 0 0 15px;
 }
 
 .page-main__slogan {
   position: relative;
-  margin: 0;
-  width: 300px;
+  margin: 0 auto;
+  width: 185px;
   color: $cl-white;
 
   &::before {
@@ -37,7 +32,7 @@
     top: 9px;
     left: -60px;
     width: 40px;
-    height: 2px;
+    height: 1px;
     background: $cl-white;
   }
 
@@ -47,15 +42,40 @@
     top: 9px;
     right: -60px;
     width: 40px;
-    height: 2px;
+    height: 1px;
     background: $cl-white;
   }
 }
 
 .page-main__menu {
+  border-top: 5px solid #f34949;
+}
+
+.page-main__wrapper {
+  position: relative;
   padding-top: 155px;
   padding-bottom: 100px;
-  border-top: 5px solid #f34949;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 473px;
+    width: 155px;
+    height: 75px;
+    background-image: url("../img/squad.svg");
+  }
+
+  &::after {
+    position: absolute;
+    content: "The Menu";
+    top: 20px;
+    left: 507px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color: $cl-white;
+  }
 }
 
 .page-main__list {
@@ -70,10 +90,10 @@
 .page-main__item {
   margin-bottom: 50px;
   width: 495px;
+  text-align: left;
 }
 
 .page-main__name {
-
   margin: 0 45px 5px 0;
   font-size: 16px;
 }
@@ -94,13 +114,25 @@
 }
 
 .page-main__dishes {
+  position: relative;
   margin: 0;
   margin-bottom: 80px;
+  margin-right: 20px;
   font-size: 20px;
   line-height: 26px;
   color: $cl-gray;
   font-weight: 700;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 210px;
+    width: 200px;
+    height: 1px;
+    background-color: #e5e3e3;
+  }
 }
 
 .page-main__dishes-list {
@@ -111,18 +143,49 @@
   justify-content: space-between;
 }
 
+.page-main__dishes-item img {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .page-main__block {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 13px;
+    background: url("../img/icon-stars.png");
+    background-repeat: repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 36px;
+    width: 24px;
+    height: 13px;
+    background: url("../img/icon-stars-grey.png");
+    background-repeat: repeat;
+  }
 }
 
 .page-main__food {
+  margin: 0;
   font-size: $fn-sz;
   font-weight: 300;
   color: $cl-gray_black;
 }
 
 .page-main__total {
+  margin: 0;
   color: $cl-gray_black;
   font-size: $fn-sz;
 }

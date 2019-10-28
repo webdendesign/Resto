@@ -4,12 +4,23 @@
 }
 
 .passage__title {
+  position: relative;
   margin: 0 0 70px;
   font-size: 20px;
   line-height: 26px;
   color: $cl-gray;
   font-weight: 700;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 170px;
+    width: 200px;
+    height: 1px;
+    background-color: #e5e3e3;
+  }
 }
 
 .passage__image {

@@ -1,25 +1,26 @@
 .page-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: $cl-gray;
+  min-height: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: $cl-gray;
 }
 
 .page-footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-footer__list {
-    @include list;
+  @include list;
 }
 
 .page-footer__item {
-    font-size: $fn-sz;
-    // font-weight: 400;
-    color: $cl-white;
+  font-size: $fn-sz;
+  // font-weight: 400;
+  color: $cl-white;
 }
 
 .page-footer__item--bold {
-    font-weight: 700;
+  font-weight: 700;
 }
