@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Resto</title>
+    <link
+      rel="preload"
+      href="fonts/AleoRegular.woff"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/AleoBold.woff"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/AleoLight.woff"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -42,7 +60,7 @@
             <ul class="page-main__list">
               <li class="page-main__item">
                 <div class="page-main__block">
-                  <h2 class="page-main__name">Voluplate cillum fugiat</h2>
+                  <h2 class="page-main__name">Voluplate cillum fugiat.</h2>
                   <p class="page-main__price">$50</p>
                 </div>
                 <p class="page-main__description">
@@ -51,14 +69,14 @@
               </li>
               <li class="page-main__item">
                 <div class="page-main__block">
-                  <h2 class="page-main__name">Arcu pede enim jisto.</h2>
+                  <h2 class="page-main__name">Arcu pede enim justo.</h2>
                   <p class="page-main__price">$45</p>
                 </div>
                 <p class="page-main__description">Tuna, Sweetcorn, Cheese.</p>
               </li>
               <li class="page-main__item">
                 <div class="page-main__block">
-                  <h2 class="page-main__name">Metus varius laureet</h2>
+                  <h2 class="page-main__name">Metus varius laureet.</h2>
                   <p class="page-main__price">$62</p>
                 </div>
                 <p class="page-main__description">
@@ -76,7 +94,7 @@
               </li>
               <li class="page-main__item">
                 <div class="page-main__block">
-                  <h2 class="page-main__name">Donec sodales magna</h2>
+                  <h2 class="page-main__name">Donec sodales magna.</h2>
                   <p class="page-main__price">$25</p>
                 </div>
                 <p class="page-main__description">Tuna, Sweetcorn, cheese</p>
@@ -101,7 +119,7 @@
               </li>
               <li class="page-main__item">
                 <div class="page-main__block">
-                  <h2 class="page-main__name">Nam eget dui Etiam</h2>
+                  <h2 class="page-main__name">Nam eget dui Etiam.</h2>
                   <p class="page-main__price">$35</p>
                 </div>
                 <p class="page-main__description">
@@ -109,7 +127,7 @@
                 </p>
               </li>
             </ul>
-            <button class="btn__load">load more</button>
+            <button class="page-main__btn">load more</button>
           </div>
         </div>
       </div>
@@ -131,16 +149,20 @@
           <ul class="page-main__dishes-list">
             <li class="page-main__dishes-item">
               <img src="img/food1.jpg" width="230" height="200" alt="meat" />
-              <div class="page-main__block">
+              <div
+                class="page-main__dishes-block page-main__dishes-block--figuat"
+              >
                 <h3 class="page-main__food">Figuat nulla sint</h3>
                 <p class="page-main__total">$30</p>
               </div>
             </li>
             <li class="page-main__dishes-item">
               <img src="img/food2.jpg" width="230" height="200" alt="salad" />
-              <div class="page-main__block">
-                <h3 class="page-main__food">Figuat nulla sint</h3>
-                <p class="page-main__total">$30</p>
+              <div
+                class="page-main__dishes-block page-main__dishes-block--daute"
+              >
+                <h3 class="page-main__food">Daute irure dolor</h3>
+                <p class="page-main__total">$24</p>
               </div>
             </li>
             <li class="page-main__dishes-item">
@@ -150,16 +172,18 @@
                 height="200"
                 alt="porridge"
               />
-              <div class="page-main__block">
-                <h3 class="page-main__food">Figuat nulla sint</h3>
-                <p class="page-main__total">$30</p>
+              <div
+                class="page-main__dishes-block page-main__dishes-block--officia"
+              >
+                <h3 class="page-main__food">Officia deserunt mollit</h3>
+                <p class="page-main__total">$60</p>
               </div>
             </li>
             <li class="page-main__dishes-item">
               <img src="img/food4.jpg" width="230" height="200" alt="millet" />
-              <div class="page-main__block">
-                <h3 class="page-main__food">Figuat nulla sint</h3>
-                <p class="page-main__total">$30</p>
+              <div class="page-main__dishes-block page-main__dishes-block--pim">
+                <h3 class="page-main__food">Pim minim veniam</h3>
+                <p class="page-main__total">$17</p>
               </div>
             </li>
           </ul>
@@ -209,8 +233,12 @@
             <li class="page-footer__item page-footer__item--bold">
               New York Restoraunt
             </li>
-            <li class="page-footer__item">3926 Anmoore Road</li>
-            <li class="page-footer__item">New York, NY 10014</li>
+            <li class="page-footer__item page-footer__item--light">
+              3926 Anmoore Road
+            </li>
+            <li class="page-footer__item page-footer__item--light">
+              New York, NY 10014
+            </li>
             <li class="page-footer__item page-footer__item--bold">
               718-749-1714
             </li>
@@ -219,17 +247,21 @@
             <li class="page-footer__item page-footer__item--bold">
               France Restaurant
             </li>
-            <li class="page-footer__item">68, ru de la Couronne</li>
-            <li class="page-footer__item">75002 PARIS</li>
+            <li class="page-footer__item page-footer__item--light">
+              68, ru de la Couronne
+            </li>
+            <li class="page-footer__item page-footer__item--light">
+              75002 PARIS
+            </li>
             <li class="page-footer__item page-footer__item--bold">
               02.94.23.69.56
             </li>
           </ul>
           <ul class="page-footer__list">
-            <li class="page-footer__item">Blog</li>
-            <li class="page-footer__item">Careers</li>
-            <li class="page-footer__item">Privacy Policy</li>
-            <li class="page-footer__item">Contact</li>
+            <li class="page-footer__item"><a href="#">Blog</a></li>
+            <li class="page-footer__item"><a href="#">Careers</a></li>
+            <li class="page-footer__item"><a href="#">Privacy Policy</a></li>
+            <li class="page-footer__item"><a href="#">Contact</a></li>
           </ul>
           <ul class="page-footer__list">
             <li class="page-footer__item">
@@ -242,8 +274,12 @@
                 />
               </a>
             </li>
-            <li class="page-footer__item">All Rights Reserved 2014.</li>
-            <li class="page-footer__item">Find More at Pixelhint.com</li>
+            <li class="page-footer__item page-footer__item--light">
+              All Rights Reserved 2014.
+            </li>
+            <li class="page-footer__item page-footer__item--light">
+              Find More at <a href="#">Pixelhint.com</a>
+            </li>
           </ul>
         </div>
       </div>
