@@ -23,13 +23,9 @@
       as="font"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div style="display:none">
-      <include src="source/img/sprite.svg"></include>
-    </div>
-
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapper">
@@ -152,7 +148,11 @@
           </div>
           <ul class="page-main__dishes-list">
             <li class="page-main__dishes-item">
-              <img src="img/food1.jpg" width="230" height="200" alt="meat" />
+              <picture>
+                <source type="image/webp" srcset="img/food1.webp" />
+
+                <img src="img/food1.jpg" width="230" height="200" alt="meat" />
+              </picture>
               <div
                 class="page-main__dishes-block page-main__dishes-block--figuat"
               >
@@ -161,7 +161,11 @@
               </div>
             </li>
             <li class="page-main__dishes-item">
-              <img src="img/food2.jpg" width="230" height="200" alt="salad" />
+              <picture>
+                <source type="image/webp" srcset="img/food2.webp" />
+
+                <img src="img/food2.jpg" width="230" height="200" alt="salad" />
+              </picture>
               <div
                 class="page-main__dishes-block page-main__dishes-block--daute"
               >
@@ -170,12 +174,16 @@
               </div>
             </li>
             <li class="page-main__dishes-item">
-              <img
-                src="img/food3.jpg"
-                width="230"
-                height="200"
-                alt="porridge"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/food3.webp" />
+
+                <img
+                  src="img/food3.jpg"
+                  width="230"
+                  height="200"
+                  alt="porridge"
+                />
+              </picture>
               <div
                 class="page-main__dishes-block page-main__dishes-block--officia"
               >
@@ -184,7 +192,16 @@
               </div>
             </li>
             <li class="page-main__dishes-item">
-              <img src="img/food4.jpg" width="230" height="200" alt="millet" />
+              <picture>
+                <source type="image/webp" srcset="img/food4.webp" />
+
+                <img
+                  src="img/food4.jpg"
+                  width="230"
+                  height="200"
+                  alt="millet"
+                />
+              </picture>
               <div class="page-main__dishes-block page-main__dishes-block--pim">
                 <h3 class="page-main__food">Pim minim veniam</h3>
                 <p class="page-main__total">$17</p>
@@ -198,32 +215,48 @@
         <div class="container">
           <h2 class="passage__title">The Gallery</h2>
           <div class="passage__image">
-            <img src="img/gallery1.jpg" width="366" height="432" alt="roll" />
+            <picture>
+              <source type="image/webp" srcset="img/gallery1.webp" />
+
+              <img src="img/gallery1.jpg" width="366" height="432" alt="roll" />
+            </picture>
             <div class="passage__gallery">
-              <img
-                src="img/gallery2.jpg"
-                width="367"
-                height="216"
-                alt="bagel"
-              />
-              <img
-                src="img/gallery3.jpg"
-                width="367"
-                height="216"
-                alt="pizza"
-              />
-              <img
-                src="img/gallery4.jpg"
-                width="367"
-                height="216"
-                alt="berries"
-              />
-              <img
-                src="img/gallery5.jpg"
-                width="367"
-                height="216"
-                alt="pasta"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery2.webp" />
+                <img
+                  src="img/gallery2.jpg"
+                  width="367"
+                  height="216"
+                  alt="bagel"
+                />
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/gallery3.webp" />
+                <img
+                  src="img/gallery3.jpg"
+                  width="367"
+                  height="216"
+                  alt="pizza"
+                />
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/gallery4.webp" />
+                <img
+                  src="img/gallery4.jpg"
+                  width="367"
+                  height="216"
+                  alt="berries"
+                />
+              </picture>
+              <picture>
+                <source type="image/webp" srcset="img/gallery5.webp" />
+                <img
+                  src="img/gallery5.jpg"
+                  width="367"
+                  height="216"
+                  alt="pasta"
+                />
+              </picture>
             </div>
           </div>
         </div>
